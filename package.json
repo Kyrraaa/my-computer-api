@@ -1,0 +1,39 @@
+{
+  "name": "my-computer",
+  "version": "1.0.0",
+  "description": "An e-commerce website that sell computer",
+  "main": "index.js",
+  "scripts": {
+    "migrate": "ts-node src/database/migrate.ts",
+    "dev": "nodemon",
+    "build": "rm -rf build && tsc --build",
+    "eslint": "eslint src/"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/express": "^4.17.14",
+    "@types/node": "^18.11.0",
+    "body-parser": "^1.20.1",
+    "dotenv": "^16.0.3",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-airbnb-typescript": "^17.0.0",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^8.5.1",
+    "mysql2": "^2.3.3",
+    "nodemon": "^2.0.20",
+    "postman": "^0.2.0",
+    "sequelize": "^6.25.3",
+    "sequelize-cli-typescript": "^3.2.0-c",
+    "typescript": "^4.8.4"
+  },
+  "devDependencies": {
+    "eslint": "^8.25.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jsx-a11y": "^6.6.1",
+    "eslint-plugin-react": "^7.31.10",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "sequelize-cli": "^6.5.1"
+  }
+}
